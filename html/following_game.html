@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Binh3012's Following Games</title>
+
+
+</head>
+<body id="body">
+<h1>Steam Games</h1>
+<script type="text/javascript">
+/*
+<div><iframe src="https://store.steampowered.com/widget/599140/" frameborder="0" width="646" height="190"></iframe></div>
+*/
+    window.onload = function (){
+        var games_id = ["599140","1163770","1430990","413150","246420","816340","458710","1367550"];
+        var i;
+        var body = document.getElementById("body");
+        for (i=0;i<games_id.length;i++)
+        {
+var divTag = document.createElement("div");
+var iTag = document.createElement("iframe");
+iTag.setAttribute("src","https:\/\/store.steampowered.com\/widget\/" + games_id[i]);
+iTag.setAttribute("frameborder",0);
+iTag.setAttribute("width", "646");
+iTag.setAttribute("height", "190");
+
+divTag.appendChild(iTag);
+body.appendChild(divTag);
+
+
+        }
+    }
+    
+</script>
+
+</body>
+</html>
+
+
+
+
